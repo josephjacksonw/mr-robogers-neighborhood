@@ -1,5 +1,5 @@
 //Business Logic
-function validator(e){
+/*function validator(e){
   let eString = e.toString();
   let newE = "";
   let temp2 = 0
@@ -33,6 +33,27 @@ function numCheck(e) {
   } else {
     return 1
   }
+}*/
+function buildArr(e) {
+  let outArr = []
+  console.log(e)
+  console.log(e.toString())
+  for (i=0; i <= e; i++) {
+    if (i.toString().includes("3")) {
+      console.log("the 3 checked worked");
+      outArr.push("Won't you be my neighbor?");
+    } else {
+    console.log(i)
+    outArr.push(i)
+    console.log(outArr)
+  }   
+  }
+  return outArr;
+}
+
+function welcomeMessage(e) {
+  let output = buildArr(e)
+  return output;
 }
 
 //UI Logic
@@ -40,18 +61,23 @@ function numCheck(e) {
 function formHandler(event) {
   event.preventDefault();
   let result
-  const cardNumber = document.getElementById("number1").value;
-  let cardDigits = cardNumber.toString()
+  const input = document.getElementById("number1").value;
+  result = welcomeMessage(input)
+  
+  /*let cardDigits = cardNumber.toString()
   const checkedNum = numCheck(cardDigits)
   if (checkedNum === 1) {
     result = validator(cardNumber)
   } else {
     result = "Error, credit cards are 16 positive integers"
   }
+
+*/
+
   document.getElementById("result").innerText = result;
 }
 
 window.addEventListener("load", function() {
-  document.getElementById("cardInfo").addEventListener("submit", formHandler);
+  document.getElementById("userInput").addEventListener("submit", formHandler);
   console.log("page load function worked")
 });
