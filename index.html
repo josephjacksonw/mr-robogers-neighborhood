@@ -34,7 +34,8 @@
         <div class="card">
           <div class="card-body">
             <div class="imgCen">
-              <img src="images/mr robogers.png" alt="Mr Robogers in the Neighborhood.">
+              <img id="goodBot" src="images/mr robogers.png" alt="Mr Robogers in the Neighborhood.">
+              <img class ="hidden" id="badBot" src="images/robogers-attack.png" alt="Mr Robogers is attacking!">
             </div>
           </div>
         </div>
@@ -43,6 +44,7 @@
   </div>
   <h1 class="hidden" id="reveal">Welcome!</h1>
   <p id="result"></p>
+  <button class="hidden" type="button" onclick="makeEvil()" id="btn">Make the robot Evil</button>
 
 </body>
 </html>

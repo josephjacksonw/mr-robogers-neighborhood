@@ -1,12 +1,41 @@
-make a web app that takes input from a user
-it returns a list of values from 0 to the inputted number with changes to the list
-all numbers with a 1,2, or 3 in them get changed 
-use a loop (ill have to p easily)
-if a new number is put in, the old result is replaced by the new one
-output every number up to the thing
-do TDD
+# Mr Robogers Neighborhood
 
-so really all we have to do is find the number and output the list
+#### By Joseph Jackson
+
+#### A simple JavaScript form for looping through data
+
+[Click Here to View the Page](https://josephjacksonw.github.io/mr-robogers-neighborhood/)
+
+## Technologies Used
+
+* HTML
+* CSS
+* JavaScript
+* Bootstrap
+
+## Description
+
+This website lets users submit a number and will output a counted array with some numbers altered.
+
+Any number that contains a 3, 2, or 1 will instead have a statment from Mr. Robogers!
+
+## Setup/Installation Requirements
+
+* Clone this repository to your desktop
+* Navigate to the top level of the directory
+* Open index.html in your browser
+
+## Known bugs
+
+* None
+
+## License
+
+MIT
+
+Copyright (c) Joseph Jackson
+
+
 
 TDD
 
@@ -35,28 +64,3 @@ Code:
 const input = 5;
 buildArr(input);
 Expected Output: 0, "Beep", "Boop!", "Won't you be my neighbor?", 4, 5
-
-Test: 
-Code:
-
-Expected Output: 
-
-Test: 
-Code:
-
-Expected Output: 
-
-Test: 
-Code:
-
-Expected Output: 
-
-Test: 
-Code:
-
-Expected Output: 
-
-Test: 
-Code:
-
-Expected Output: 
