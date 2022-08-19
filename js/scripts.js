@@ -42,6 +42,12 @@ function buildArr(e) {
     if (i.toString().includes("3")) {
       console.log("the 3 checked worked");
       outArr.push("Won't you be my neighbor?");
+    } else if(i.toString().includes("2")) {
+      console.log("found a 2");
+      outArr.push("Boop!")
+    } else if(i.toString().includes("1")) {
+      console.log("gotta 1");
+      outArr.push("Beep!")
     } else {
     console.log(i)
     outArr.push(i)
@@ -53,7 +59,7 @@ function buildArr(e) {
 
 function welcomeMessage(e) {
   let output = buildArr(e)
-  return output;
+  return output.join(", ");
 }
 
 //UI Logic
@@ -62,7 +68,12 @@ function formHandler(event) {
   event.preventDefault();
   let result
   const input = document.getElementById("number1").value;
-  result = welcomeMessage(input)
+  if (input < 0) {
+    result = "Error, input must be a positive integer or 0"
+  } else {
+    result = welcomeMessage(input)
+  }
+  
   
   /*let cardDigits = cardNumber.toString()
   const checkedNum = numCheck(cardDigits)
