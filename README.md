@@ -18,6 +18,10 @@ const input = "123";
 welcomeMessage(input);
 Expected Output: "123"
 
+Test: it should output an error if the number is not a positive integer
+Code:
+const input = -12
+
 Describe buildArr()
 
 Test: "it should create an array of counting numbers up to the submitted input

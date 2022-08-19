@@ -2,19 +2,47 @@
 <html lang="en-US">
 <head>
   <title>Mr. Roboger's Neighborhood</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/scripts.js"></script>
 </head>
 <body>
-  <h1>Mr. Roboger's Neighborhood</h1>
-  <p>Input a number and be welcomed to the Neighborhood!</p>
-  <form id="userInput">
-    <label for="number1">Input Credit Card number</label>
-    <input id="number1" type="number" name="number1">
-    <br>
-    <button type="submit">Submit Selection</button>
-  </form>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Mr. Roboger's Neighborhood</h1>
+    </div>
+  </div>
+  <div class="conatiner">
+    <div class="row">
+      <div class="col-6">
+        <div class="card">
+          <div class="card-body">
+            <div class="card-title">
+              <h1>Input a Number and Be Welcomed to the Neighborhood!</h1>
+            </div>
+            <div class="card-text">
+              <form id="userInput">
+                <label for="number1">Submit Your Number!:</label>
+                <input id="number1" type="number" name="number1">
+                <button type="submit">Join the Neighborhood!</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="card">
+          <div class="card-body">
+            <div class="imgCen">
+              <img src="images/mr robogers.png" alt="Mr Robogers in the Neighborhood.">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1 class="hidden" id="reveal">Welcome!</h1>
+  <p id="result"></p>
 
-    <p id="result"></p>
 </body>
 </html>
