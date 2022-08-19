@@ -23,7 +23,9 @@
             <div class="card-text">
               <form id="userInput">
                 <label for="number1">Submit Your Number!:</label>
-                <input id="number1" type="number" name="number1">
+                <input id="number1" type="number" name="number1"><br>
+                <label for="fname">Optionally, Enter your name:</label>
+                <input type="text" id="fname" name="fname"><br>
                 <button type="submit">Join the Neighborhood!</button>
               </form>
             </div>
@@ -44,7 +46,8 @@
   </div>
   <h1 class="hidden" id="reveal">Welcome!</h1>
   <p id="result"></p>
-  <button class="hidden" type="button" onclick="makeEvil()" id="btn">Make the robot Evil</button>
-
+  <button class="hidden" type="button" onclick="makeGood()" id="btn3">Make Him Good Again!</button>
+  <button class="hidden" type="button" onclick="makeEvil()" id="btn1">Make the robot Evil</button>
+  <button class="hidden" type="button" onclick="reverse()" id="btn2">Reverse the Order!</button>
 </body>
 </html>
