@@ -64,3 +64,12 @@ Code:
 const input = 5;
 buildArr(input);
 Expected Output: 0, "Beep", "Boop!", "Won't you be my neighbor?", 4, 5
+
+Describe welcomeCount()
+Test: "it should count the number of times the robot says each phrase
+Code:
+const input = 5
+nameCount(input)
+Expected output: Won't You be my neighbor: 1
+Boop!: 1
+Beep: 1
